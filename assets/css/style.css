@@ -386,6 +386,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat_item {
@@ -1170,7 +1171,7 @@ hr {
 
 @media (max-width: 1230px) {
 
-    /* Intro */
+/* Intro */
 
     .intro_suptitle {
         font-size: 52px;
@@ -1183,7 +1184,7 @@ hr {
 
 @media (max-width: 990px) {
 
-    /* Intro */
+/* Intro */
 
     .intro_suptitle {
         font-size: 32px;
@@ -1192,34 +1193,59 @@ hr {
     .intro_title {
         font-size: 80px;
     }
+
+/* Statistics */
+
+     .stat {
+         justify-content: center;
+     }
+
+     .stat_item {
+
+        flex: none;
+        width: 33.33333%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        border: 0;
+     }
+
+     .stat_item:last-child {
+         border: 0;
+     }
 }
 
 @media (max-width: 770px) {
 
-    /* Nav */
+/* Nav */
 
      .nav {
          display: none;
     }
 
-    /* Section */
+/* Section */
 
     .section {
         padding: 40px 0;
     }
 
-    /* Card */
+/* Card */
 
     .card {
+        margin-top: 50px;
         justify-content: center;
     }
 
     .card_item {
         width: 100%;
         min-width: 410px;
+        margin-bottom: 30px;
     }
     
-     /* Slider */
+    .card_item:last-child {
+        margin-bottom: 0;
+    }
+/* Slider */
 
     .slider_text {
         display: none;
@@ -1231,7 +1257,7 @@ hr {
 
 @media (max-width: 575px) {
 
-    /* Intro */
+/* Intro */
 
     .section_header {
         margin-bottom: 50px;
@@ -1245,7 +1271,7 @@ hr {
         font-size: 40px;
     }
 
-    /* Section */
+/* Section */
     .section_suptitle {
         font-size: 20px;
     }
@@ -1257,6 +1283,27 @@ hr {
     .section_title:after {
         margin: 20px auto;
     }
+
+/* Statistics */
+
+.stat_item {
+    width: 100%;
+    border-bottom: 1px solid #b5eae0;
+}
+
+.stat_item:last-child {
+    border-bottom: none;
+}
+
+.stat_count {
+    font-size: 52px;
+}
+
+
+
+
+
+
 }
 
 
