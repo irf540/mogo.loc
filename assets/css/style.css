@@ -1164,7 +1164,7 @@ hr {
 
 
 
-@media (max-widht:1230px) {
+@media (max-width: 1230px) {
 
     /* Intro */
 
@@ -1177,7 +1177,7 @@ hr {
     }
 }
 
-@media (max-widht:990px) {
+@media (max-width: 990px) {
 
     /* Intro */
 
@@ -1190,7 +1190,7 @@ hr {
     }
 }
 
-@media (max-widht:650px) {
+@media (max-width: 650px) {
 
     /* Intro */
 
