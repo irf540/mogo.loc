@@ -56,11 +56,17 @@ $("#nav_toggle").on("click", function(event) {
 });
 
 
+/* Collapse */
 
+$("[data-collapse]").on("click", function(event){
+    event.preventDefault();
 
+    var $this = $(this),
+    blockId = $this.data('collapse');   
 
+    $(blockId).slideToggle();
 
-
+});
 
 
 
