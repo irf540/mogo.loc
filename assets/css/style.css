@@ -188,6 +188,10 @@ hr {
     z-index: 1;
 }
 
+.nav-toogle:focus {
+    outline: 0;
+}
+
 .nav-toogle_item {
     display: block;
     width: 100%;
@@ -1456,6 +1460,10 @@ hr {
              
 
              background-color:#eb8b8d;
+        }
+
+        .nav.active {
+            display: block;
         }
 
         .nav__link {
