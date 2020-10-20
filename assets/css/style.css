@@ -680,11 +680,15 @@ hr {
 /* Reviews */
 
 .reviews {
-    padding: 0 110px;
     position: relative;
 }
 
+.reviews .slick-slider {
+    padding: 0 110px;
+}
+
 .reviews_item {
+    min-height: 200px;
     padding-left: 255px;
     position: relative;
 }
@@ -732,9 +736,13 @@ hr {
 }
 
 
-.reviews_btn {
+.slick-arrow {
     font-size: 0;
     color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
 
     position: absolute;
     top: 50%;
@@ -742,7 +750,7 @@ hr {
     transform: translateY(-50%);
 }
 
-.reviews_btn:after {
+.slick-arrow:after {
     content: "";
     display: block;
     width: 16px;
@@ -758,12 +766,16 @@ hr {
 
 }
 
-.reviews_btn--prev {
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-prev {
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews_btn--next {
+.slick-next {
     right: 0;
     transform: rotate(135deg);
 }
@@ -1375,7 +1387,7 @@ hr {
     
     /* Reviews */
     
-        .reviews {
+        .reviews .slick-slider {
             padding: 0 60px;
         }
     
@@ -1659,11 +1671,11 @@ hr {
         
     /* Reviews */
     
-        .reviews {
+        .reviews .slick-slider {
             padding: 0;
         }
     
-        .reviews_btn {
+        .slick-arrow {
             top: 18%;
         }
     

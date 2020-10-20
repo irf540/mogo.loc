@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Mogo</title>
 </head>
 
@@ -239,8 +240,8 @@
                     </div>
                     <div class="wedo_item">
                         <div class="accordion">
-                            <div class="accordion_item">
-                                <div class="accordion_header" data-collapse="#wedo_1">
+                            <div class="accordion_item" data-collapse="#wedo_1">
+                                <div class="accordion_header">
                                     <img class="accordion_icon" src="assets/images/accordion/photography.png" alt="">
                                     <div class="accordion_title">Photography</div>
                                 </div>
@@ -258,8 +259,8 @@
                                 </div>
                             </div>
     
-                            <div class="accordion_item active">
-                                <div class="accordion_header" data-collapse="#wedo_2">
+                            <div class="accordion_item active" data-collapse="#wedo_2">
+                                <div class="accordion_header" >
                                     <img class="accordion_icon" src="assets/images/accordion/creativity.png" alt="">
                                     <div class="accordion_title">creativity</div>
                                 </div>
@@ -277,8 +278,8 @@
                                 </div>
                             </div>
     
-                            <div class="accordion_item">
-                                <div class="accordion_header" data-collapse="#wedo_3">
+                            <div class="accordion_item" data-collapse="#wedo_3">
+                                <div class="accordion_header">
                                     <img class="accordion_icon" src="assets/images/accordion/webdesign.png" alt="">
                                     <div class="accordion_title">web design</div>
                                 </div>
@@ -311,15 +312,30 @@
             <div class="container">
     
                 <div class="reviews">
-                    <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-                    <a class="reviews_btn reviews_btn--next" href="#">Next</a>
+                   <!-- <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
+                    <a class="reviews_btn reviews_btn--next" href="#">Next</a> -->
     
-                    <div class="reviews_item">
-                        <img class="reviews_photo" src="assets/images/speech.png" alt="">
-                        <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                        <div class="reviews_author">Jon Doe</div>
+                    <div data-slider>
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="assets/images/speech.png" alt="">
+                                <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews_author">Jon Doe</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="assets/images/avatar.png" alt="">
+                                <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews_author">Joshua Earle</div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
     
@@ -548,15 +564,30 @@
             <div class="container">
     
                 <div class="reviews">
-                    <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-                    <a class="reviews_btn reviews_btn--next" href="#">Next</a>
+                    <!--<a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
+                    <a class="reviews_btn reviews_btn--next" href="#">Next</a>-->
     
-                    <div class="reviews_item">
-                        <img class="reviews_photo" src="assets/images/avatar.png" alt="">
-                        <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                        <div class="reviews_author">Joshua Earle</div>
+                    <div data-slider>
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="assets/images/avatar.png" alt="">
+                                <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews_author">Joshua Earle</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="assets/images/speech.png" alt="">
+                                <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews_author">Jon Doe</div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
     
@@ -861,6 +892,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 
 
